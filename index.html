@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>for you</title>
+
+  <style>
+    :root {
+      --bg: #0f1115;
+      --text: #cfd3dc;
+      --muted: #8b909a;
+      --accent: #5f7cff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.7;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 720px;
+      padding: 64px 32px;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin-bottom: 32px;
+      letter-spacing: 0.02em;
+    }
+
+    p {
+      margin-bottom: 24px;
+      color: var(--text);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .divider {
+      margin: 48px 0;
+      height: 1px;
+      width: 100%;
+      background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255,255,255,0.15),
+        transparent
+      );
+    }
+
+    footer {
+      margin-top: 48px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <h1>Hey.</h1>
+
+    <p>
+      <!-- PUT YOUR MESSAGE HERE -->
+      This is where your message goes. You can write as much or as little as you want.
+      Line breaks are okay. Silence is okay too.
+    </p>
+
+    <p class="muted">
+      <!-- OPTIONAL SECOND PARAGRAPH -->
+      This can be softer. Or just empty.
+    </p>
+
+    <div class="divider"></div>
+
+    <p>
+      <!-- FINAL THOUGHT -->
+      One last thought. Or not.
+    </p>
+
+    <footer>
+      <!-- OPTIONAL SIGNATURE -->
+      — always yours
+    </footer>
+
+  </div>
+</body>
+</html>
